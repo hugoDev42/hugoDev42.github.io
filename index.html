@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camille Dubois — Développeuse Full-Stack</title>
+  <meta name="description" content="Portfolio de Camille Dubois, développeuse full-stack — projets, compétences et parcours." />
+  <meta name="theme-color" content="#11131A" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo" id="navLogo">--</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#about" data-section="about">À propos</a>
+        <a href="#skills" data-section="skills">Compétences</a>
+        <a href="#projects" data-section="projects">Projets</a>
+        <a href="#experience" data-section="experience">Parcours</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Changer de thème">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <button id="navToggle" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="hero-glow" id="heroGlow"></div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-status" id="heroStatus"></p>
+          <h1 class="hero-title" id="heroName"></h1>
+          <p class="hero-role" id="heroRole"></p>
+          <p class="hero-pitch" id="heroPitch"></p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+          </div>
+
+          <div class="hero-socials" id="heroSocials"></div>
+        </div>
+
+        <div class="hero-code" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-dots"><span></span><span></span><span></span></div>
+            <pre><code id="codeSnippet"></code><span class="code-cursor"></span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-inner">
+        <h2>À propos</h2>
+        <div class="about-grid">
+          <div class="about-text reveal" id="aboutText"></div>
+          <div class="about-avatar reveal" id="aboutAvatar"></div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marqueeTrack"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-inner">
+        <h2>Compétences</h2>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <h2>Projets</h2>
+        <p class="section-note">Une sélection de projets récents — remplace-les par les tiens dans <code>config.js</code>.</p>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-inner">
+        <h2>Parcours</h2>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-inner contact-inner reveal">
+        <h2>Contact</h2>
+        <p class="contact-text" id="contactText"></p>
+        <div class="contact-actions" id="contactActions"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p id="footerNote"></p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
