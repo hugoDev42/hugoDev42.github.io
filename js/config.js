@@ -1,113 +1,173 @@
 // ============================================================
 //  CONFIG.JS
 //  Tout le texte du site vient de cet objet.
-//  Remplace les valeurs ci-dessous par tes propres informations
-//  — tu n'as pas besoin de toucher au reste du code.
+//  Modifie librement les valeurs ci-dessous.
 //
 //  N'oublie pas de mettre aussi à jour le <title> et la balise
-//  <meta name="description"> dans index.html (elles ne sont
-//  pas générées automatiquement, pour rester lisibles par les
-//  moteurs de recherche).
+//  <meta name="description"> dans index.html si tu changes de
+//  nom ou d'intitulé (elles ne sont pas générées automatiquement,
+//  pour rester lisibles par les moteurs de recherche).
 // ============================================================
 
 const CONFIG = {
   favicon: "💻", // un emoji utilisé comme icône d'onglet
 
   profile: {
-    name: "Camille Dubois",
-    role: "Développeuse Full-Stack",
+    name: "Hugo Germond",
+    role: "Développeur Full-Stack & Mobile",
     statusAvailable: true, // false pour masquer le point vert "disponible"
-    status: "Disponible pour de nouvelles opportunités",
-    pitch: "Je conçois des applications web rapides, accessibles et faciles à maintenir — du prototype à la mise en production.",
-    initials: "CD",
+    status: "Recherche un stage à l'international (12 semaines)",
+    pitch:
+      "Alternant ingénieur à l'ESIGELEC chez Altitude Infra, je conçois des applications web et mobiles, du prototype à la mise en production.",
+    initials: "HG",
     // Un court extrait de code affiché dans le hero, à but purement illustratif.
-    codeSnippet: `function buildProject(idea) {
+    codeSnippet: `function buildProject(idea: Idea) {
   const plan = design(idea);
-  const code = write(plan, {
-    clean: true,
+  const app = build(plan, {
+    stack: ["TypeScript", "React Native", "AWS"],
     tested: true,
   });
 
-  return ship(code);
-}`
+  return ship(app);
+}`,
   },
 
   about: {
     paragraphs: [
-      "Développeuse full-stack, spécialisée en JavaScript/TypeScript sur des applications web à fort trafic.",
-      "J'aime transformer des besoins flous en interfaces claires, avec une attention particulière portée à la performance et à l'accessibilité."
+      "Étudiant ingénieur à l'ESIGELEC (dominante Ingénierie des Systèmes Numériques), actuellement en alternance chez Altitude Infra où je développe des applications web et mobiles ainsi que des API.",
+      "J'ai aussi réalisé un stage de 12 semaines chez Barco sur SlideRight QA, un outil d'analyse d'image médicale, en TypeScript et Angular sur AWS. Je recherche aujourd'hui un stage à l'international pour valider la mobilité requise par mon diplôme.",
     ],
-    stack: ["JavaScript", "TypeScript", "React", "Node.js", "PostgreSQL", "Docker", "AWS", "Git", "GraphQL"]
+    stack: [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "React Native",
+      "Expo",
+      "Angular",
+      "Java",
+      "AWS",
+      "SQL",
+      "Git",
+    ],
   },
 
   skills: [
     {
-      category: "Frontend",
-      items: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Accessibilité (WCAG)"]
+      category: "Frontend & Mobile",
+      items: [
+        "React",
+        "React Native",
+        "Expo",
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "HTML5 / CSS3",
+        "UI/UX & Responsive Design",
+      ],
     },
     {
-      category: "Backend",
-      items: ["Node.js", "Express", "PostgreSQL", "REST & GraphQL", "Redis"]
+      category: "Backend & Langages",
+      items: [
+        "Java",
+        "C / C++ / C#",
+        "PHP",
+        "Symfony",
+        ".NET Framework",
+        "API REST",
+        "Programmation orientée objet",
+      ],
     },
     {
-      category: "Outils & pratiques",
-      items: ["Git", "Docker", "CI/CD", "Tests (Jest, Playwright)", "Agile/Scrum"]
-    }
+      category: "Données, Cloud & Outils",
+      items: [
+        "MySQL",
+        "Oracle",
+        "SQL Server (MSSQL)",
+        "AWS",
+        "Git, GitHub, GitLab",
+        "Gestion de projet agile",
+        "Réseaux",
+        "IA & Prompt Engineering",
+      ],
+    },
   ],
 
   // Ajoute, retire ou modifie autant de projets que tu veux.
   projects: [
     {
-      title: "Nom du projet 1",
-      description: "Décris en une ou deux phrases le problème résolu, les choix techniques et ton rôle.",
-      tags: ["React", "Node.js", "PostgreSQL"],
-      links: { code: "https://github.com/tonpseudo/projet1", demo: "https://demo-projet1.exemple.com" }
+      title: "SlideRight QA — Analyse d'image médicale",
+      description:
+        "Stage de 12 semaines chez Barco : contribution à un outil de contrôle qualité pour l'analyse de lames virtuelles, utilisé par des professionnels de santé.",
+      tags: ["Angular", "TypeScript", "AWS"],
+      links: { demo: "https://www.barco.com/en/product/slideright-qa" },
     },
     {
-      title: "Nom du projet 2",
-      description: "Décris en une ou deux phrases le problème résolu, les choix techniques et ton rôle.",
-      tags: ["TypeScript", "Vue.js"],
-      links: { code: "https://github.com/tonpseudo/projet2", demo: "" }
+      title: "Applications web & mobiles — Altitude Infra",
+      description:
+        "En alternance : développement d'applications mobiles et web, conception et développement d'API REST, gestion de bases de données SQL et suivi de projet.",
+      tags: ["React Native", "React", "API REST", "SQL"],
     },
     {
-      title: "Nom du projet 3",
-      description: "Décris en une ou deux phrases le problème résolu, les choix techniques et ton rôle.",
-      tags: ["Python", "FastAPI", "Docker"],
-      links: { code: "https://github.com/tonpseudo/projet3", demo: "" }
-    }
+      title: "Extranet — Centre Hospitalier Durécu-Lavoisier",
+      description:
+        "Stage : conception et développement d'un extranet pour l'établissement, en complément de missions d'administration réseau et de maintenance informatique.",
+      tags: ["Développement web", "Administration réseau"],
+    },
   ],
 
   // Du plus récent au plus ancien.
   experience: [
     {
       period: "2023 — Aujourd'hui",
-      title: "Développeuse Full-Stack",
-      place: "Nom de l'entreprise",
-      description: "Ta principale réalisation ou responsabilité dans ce poste."
+      title: "Alternance — Développeur Full-Stack & Mobile",
+      place: "Altitude Infra",
+      description:
+        "Développement d'applications mobiles et web, conception et développement d'API, gestion de bases de données SQL, gestion de projet.",
     },
     {
-      period: "2021 — 2023",
-      title: "Développeuse Front-End",
-      place: "Nom de l'entreprise précédente",
-      description: "Ta principale réalisation ou responsabilité dans ce poste."
+      period: "Stage — 12 semaines",
+      title: "Analyse d'image médicale",
+      place: "Barco — SlideRight QA",
+      description:
+        "Contribution à un outil de contrôle qualité pour l'analyse de lames virtuelles, utilisé par des professionnels de santé. Stack : Angular, TypeScript, AWS.",
     },
     {
-      period: "2020 — 2021",
-      title: "Formation",
-      place: "Nom de l'école",
-      description: "Ce que tu as étudié ou le projet marquant de ta formation."
-    }
+      period: "2023 — Aujourd'hui",
+      title: "Cycle ingénieur en alternance, dominante ISN",
+      place: "ESIGELEC",
+      description:
+        "École d'ingénieurs généraliste — spécialisation Ingénierie des Systèmes Numériques.",
+    },
+    {
+      period: "2022",
+      title: "Stage",
+      place: "Centre Hospitalier Durécu-Lavoisier",
+      description:
+        "Développement d'un extranet, administration réseau et maintenance informatique.",
+    },
+    {
+      period: "2023",
+      title: "BTS Systèmes Numériques, option informatique et réseaux",
+      place: "Campus La Châtaigneraie",
+      description: "Diplôme obtenu.",
+    },
+    {
+      period: "2020",
+      title: "Baccalauréat scientifique, option sciences de l'ingénieur",
+      place: "Lycée Galilée",
+      description: "Diplôme obtenu.",
+    },
   ],
 
   contact: {
-    text: "Un projet en tête ou une opportunité à me proposer ? Écris-moi directement.",
-    email: "ton.email@exemple.com"
+    text: "Une opportunité de stage à l'international ou un projet à me proposer ? Écrivez-moi directement.",
+    email: "hugo.germond.dev@gmail.com",
   },
 
   socials: [
     { label: "GitHub", url: "https://github.com/tonpseudo" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/tonpseudo" }
+    { label: "LinkedIn", url: "https://linkedin.com/in/tonpseudo" },
   ],
 
-  footerNote: `© ${new Date().getFullYear()} Camille Dubois — construit avec HTML, CSS et JavaScript, hébergé sur GitHub Pages.`
+  footerNote: `© ${new Date().getFullYear()} Hugo Germond — construit avec HTML, CSS et JavaScript, hébergé sur GitHub Pages.`,
 };
