@@ -15,8 +15,9 @@ const CONFIG = {
   profile: {
     name: "Hugo Germond",
     role: "Développeur Full-Stack & Mobile",
-    statusAvailable: true, // false pour masquer le point vert "disponible"
-    status: "Recherche un stage à l'international (12 semaines)",
+    statusAvailable: false, // false pour masquer le point vert "disponible"
+    status:
+      "Actuellement en alternance chez Altitude Infra, je développe des applications web et mobiles ainsi que des API.",
     pitch:
       "Alternant ingénieur à l'ESIGELEC chez Altitude Infra, je conçois des applications web et mobiles, du prototype à la mise en production.",
     initials: "HG",
@@ -35,7 +36,7 @@ const CONFIG = {
   about: {
     paragraphs: [
       "Étudiant ingénieur à l'ESIGELEC (dominante Ingénierie des Systèmes Numériques), actuellement en alternance chez Altitude Infra où je développe des applications web et mobiles ainsi que des API.",
-      "J'ai aussi réalisé un stage de 12 semaines chez Barco sur SlideRight QA, un outil d'analyse d'image médicale, en TypeScript et Angular sur AWS. Je recherche aujourd'hui un stage à l'international pour valider la mobilité requise par mon diplôme.",
+      "J'ai aussi réalisé un stage de 12 semaines chez Barco sur SlideRight QA, un outil d'analyse d'image médicale, en TypeScript et Angular sur AWS.",
     ],
     stack: [
       "TypeScript",
@@ -160,13 +161,16 @@ const CONFIG = {
   ],
 
   contact: {
-    text: "Une opportunité de stage à l'international ou un projet à me proposer ? Écrivez-moi directement.",
+    text: "Une opportunité à me proposer ? Écrivez-moi directement.",
     email: "hugo.germond.dev@gmail.com",
   },
 
   socials: [
-    { label: "GitHub", url: "https://github.com/tonpseudo" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/tonpseudo" },
+    { label: "GitHub", url: "https://github.com/hugoDev42" },
+    {
+      label: "LinkedIn",
+      url: "https://linkedin.com/in/hugo-germond-701648279",
+    },
   ],
 
   footerNote: `© ${new Date().getFullYear()} Hugo Germond — construit avec HTML, CSS et JavaScript, hébergé sur GitHub Pages.`,
