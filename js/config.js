@@ -14,12 +14,12 @@ const CONFIG = {
 
   profile: {
     name: "Hugo Germond",
-    role: "Développeur Full-Stack & Mobile",
+    role: "Développeur Web, Mobile & Logiciel",
     statusAvailable: false, // false pour masquer le point vert "disponible"
     status:
-      "Actuellement en alternance chez Altitude Infra, je développe des applications web et mobiles ainsi que des API.",
+      "Élève-ingénieur en alternance chez Altitude Infra : applications mobiles, API, logiciels et sites web.",
     pitch:
-      "Alternant ingénieur à l'ESIGELEC chez Altitude Infra, je conçois des applications web et mobiles, du prototype à la mise en production.",
+      "Élève-ingénieur à l'ESIGELEC et développeur en alternance, je conçois des applications web, mobiles et logicielles, du prototype à la mise en production.",
     initials: "HG",
     // Un court extrait de code affiché dans le hero, à but purement illustratif.
     codeSnippet: `function buildProject(idea: Idea) {
@@ -35,17 +35,19 @@ const CONFIG = {
 
   about: {
     paragraphs: [
-      "Étudiant ingénieur à l'ESIGELEC (dominante Ingénierie des Systèmes Numériques), actuellement en alternance chez Altitude Infra où je développe des applications web et mobiles ainsi que des API.",
-      "J'ai aussi réalisé un stage de 12 semaines chez Barco sur SlideRight QA, un outil d'analyse d'image médicale, en TypeScript et Angular sur AWS.",
+      "Actuellement en troisième année du cycle ingénieur à l'ESIGELEC, je réalise mon alternance chez Altitude Infra en tant que développeur web, mobile et logiciel. Cette expérience me permet de mettre en pratique mes compétences en développement d'applications mobiles, d'API, d'applications logicielles et de sites web, tout en développant mes capacités en gestion de projet.",
+      "Diplômé d'un BTS SNIR (major de promotion), j'ai acquis de solides bases en développement logiciel (C, C++, C#), en création d'API et de web services, ainsi qu'en administration réseau, ce qui complète mon profil technique.",
+      "J'ai également réalisé un stage de 12 semaines chez Barco sur SlideRight QA, un outil d'analyse d'image médicale, en TypeScript et Angular sur AWS.",
+      "Ma curiosité et ma polyvalence me permettent de m'adapter rapidement aux missions qui me sont confiées et de contribuer efficacement à des projets variés.",
     ],
     stack: [
       "TypeScript",
       "JavaScript",
       "React",
       "React Native",
-      "Expo",
+      "Next.js",
       "Angular",
-      "Java",
+      "Symfony",
       "AWS",
       "SQL",
       "Git",
@@ -54,59 +56,64 @@ const CONFIG = {
 
   skills: [
     {
-      category: "Frontend & Mobile",
+      category: "Langages",
+      items: ["JavaScript", "TypeScript", "PHP", "Java", "C#", "C", "C++"],
+    },
+    {
+      category: "Frameworks & Librairies",
       items: [
         "React",
         "React Native",
-        "Expo",
+        "Next.js",
         "Angular",
-        "TypeScript",
-        "JavaScript",
-        "HTML5 / CSS3",
-        "UI/UX & Responsive Design",
-      ],
-    },
-    {
-      category: "Backend & Langages",
-      items: [
-        "Java",
-        "C / C++ / C#",
-        "PHP",
         "Symfony",
-        ".NET Framework",
-        "API REST",
-        "Programmation orientée objet",
+        ".NET",
+        "Expo",
       ],
     },
     {
-      category: "Données, Cloud & Outils",
+      category: "Bases de données",
+      items: ["MySQL", "SQL"],
+    },
+    {
+      category: "Cloud & Services",
+      items: ["AWS", "Firebase"],
+    },
+    {
+      category: "Outils & Environnement",
       items: [
-        "MySQL",
-        "Oracle",
-        "SQL Server (MSSQL)",
-        "AWS",
-        "Git, GitHub, GitLab",
-        "Gestion de projet agile",
-        "Réseaux",
-        "IA & Prompt Engineering",
+        "Git (GitHub, GitLab)",
+        "VS Code",
+        "Linux (WSL)",
+        "Docker",
+        "Bruno",
+        "Postman",
       ],
+    },
+    {
+      category: "Gestion de projet & Collaboration",
+      items: ["Jira", "Confluence", "Microsoft 365", "Méthodes agiles / Scrum"],
+    },
+    {
+      category: "IA & Productivité",
+      items: ["GitHub Copilot", "Prompt Engineering"],
     },
   ],
 
   // Ajoute, retire ou modifie autant de projets que tu veux.
   projects: [
     {
+      title: "Applications web & mobiles — Altitude Infra",
+      description:
+        "En alternance : développement d'applications mobiles (React Native) et d'outils web (React), conception d'API avec Symfony, gestion de bases de données SQL et suivi de projet.",
+      tags: ["React Native", "React", "Symfony", "API REST", "SQL"],
+    },
+    {
       title: "SlideRight QA — Analyse d'image médicale",
       description:
         "Stage de 12 semaines chez Barco : contribution à un outil de contrôle qualité pour l'analyse de lames virtuelles, utilisé par des professionnels de santé.",
-      tags: ["Angular", "TypeScript", "AWS"],
+      tags: ["Angular", "TypeScript", "AWS", "Scrum"],
       links: { demo: "https://www.barco.com/en/product/slideright-qa" },
-    },
-    {
-      title: "Applications web & mobiles — Altitude Infra",
-      description:
-        "En alternance : développement d'applications mobiles et web, conception et développement d'API REST, gestion de bases de données SQL et suivi de projet.",
-      tags: ["React Native", "React", "API REST", "SQL"],
     },
     {
       title: "Extranet — Centre Hospitalier Durécu-Lavoisier",
@@ -116,28 +123,35 @@ const CONFIG = {
     },
   ],
 
-  // Du plus récent au plus ancien.
+  // Parcours professionnel et formation.
   experience: [
     {
-      period: "2023 — Aujourd'hui",
-      title: "Alternance — Développeur Full-Stack & Mobile",
+      period: "Sept. 2023 — Aujourd'hui",
+      title: "Alternance — Développeur Web, Mobile & Logiciel",
       place: "Altitude Infra",
       description:
-        "Développement d'applications mobiles et web, conception et développement d'API, gestion de bases de données SQL, gestion de projet.",
+        "Développement d'applications mobiles (React Native), d'outils web (React) et d'API (Symfony), gestion de bases de données SQL, gestion de projet.",
     },
     {
-      period: "Stage — 12 semaines",
-      title: "Analyse d'image médicale",
-      place: "Barco — SlideRight QA",
+      period: "Juin — Août 2026",
+      title: "Stage de 12 semaines — Développeur web",
+      place: "Barco — SlideRight QA (Belgique)",
       description:
-        "Contribution à un outil de contrôle qualité pour l'analyse de lames virtuelles, utilisé par des professionnels de santé. Stack : Angular, TypeScript, AWS.",
+        "Mobilité internationale : contribution à un outil de contrôle qualité pour l'analyse de lames virtuelles, utilisé par des professionnels de santé. Stack : Angular, TypeScript, AWS.",
     },
     {
-      period: "2023 — Aujourd'hui",
+      period: "2023 — 2027",
       title: "Cycle ingénieur en alternance, dominante ISN",
       place: "ESIGELEC",
       description:
         "École d'ingénieurs généraliste — spécialisation Ingénierie des Systèmes Numériques.",
+    },
+    {
+      period: "2021 — 2023",
+      title: "BTS Systèmes Numériques, option informatique et réseaux",
+      place: "Campus La Châtaigneraie",
+      description:
+        "Diplôme obtenu, major de promotion. Développement logiciel (C, C++, C#), API et web services, administration réseau.",
     },
     {
       period: "2022",
@@ -147,16 +161,10 @@ const CONFIG = {
         "Développement d'un extranet, administration réseau et maintenance informatique.",
     },
     {
-      period: "2023",
-      title: "BTS Systèmes Numériques, option informatique et réseaux",
-      place: "Campus La Châtaigneraie",
-      description: "Diplôme obtenu.",
-    },
-    {
       period: "2020",
       title: "Baccalauréat scientifique, option sciences de l'ingénieur",
       place: "Lycée Galilée",
-      description: "Diplôme obtenu.",
+      description: "Diplôme obtenu avec mention Bien.",
     },
   ],
 
