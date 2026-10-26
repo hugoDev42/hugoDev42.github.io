@@ -15,7 +15,7 @@ const CONFIG = {
     pitch:
       "Élève-ingénieur à l'ESIGELEC et développeur en alternance, je conçois des applications web, mobiles et logicielles, du prototype à la mise en production.",
     initials: "HG",
-    // Un court extrait de code affiché dans le hero
+    // Un court extrait de code affiché dans le hero, à but purement illustratif.
     codeSnippet: `function buildProject(idea: Idea) {
   const plan = design(idea);
   const app = build(plan, {
@@ -51,7 +51,16 @@ const CONFIG = {
   skills: [
     {
       category: "Langages",
-      items: ["JavaScript", "TypeScript", "PHP", "Java", "C#", "C", "C++"],
+      items: [
+        "JavaScript",
+        "TypeScript",
+        "PHP",
+        "Java",
+        "C#",
+        "C",
+        "C++",
+        "Programmation orientée objet",
+      ],
     },
     {
       category: "Frameworks & Librairies",
@@ -63,11 +72,21 @@ const CONFIG = {
         "Symfony",
         ".NET",
         "Expo",
+        "Node.js",
+      ],
+    },
+    {
+      category: "Web & API",
+      items: [
+        "HTML5 / CSS3",
+        "UI/UX & Responsive Design",
+        "API REST",
+        "Développement full-stack",
       ],
     },
     {
       category: "Bases de données",
-      items: ["MySQL", "SQL"],
+      items: ["MySQL", "SQL", "Oracle", "SQL Server (MSSQL)"],
     },
     {
       category: "Cloud & Services",
@@ -77,12 +96,17 @@ const CONFIG = {
       category: "Outils & Environnement",
       items: [
         "Git (GitHub, GitLab)",
+        "CI/CD",
         "VS Code",
         "Linux (WSL)",
         "Docker",
         "Bruno",
         "Postman",
       ],
+    },
+    {
+      category: "Réseaux",
+      items: ["Réseaux", "Administration réseau"],
     },
     {
       category: "Gestion de projet & Collaboration",
