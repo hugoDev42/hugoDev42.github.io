@@ -1,12 +1,6 @@
 // ============================================================
 //  CONFIG.JS
 //  Tout le texte du site vient de cet objet.
-//  Modifie librement les valeurs ci-dessous.
-//
-//  N'oublie pas de mettre aussi à jour le <title> et la balise
-//  <meta name="description"> dans index.html si tu changes de
-//  nom ou d'intitulé (elles ne sont pas générées automatiquement,
-//  pour rester lisibles par les moteurs de recherche).
 // ============================================================
 
 const CONFIG = {
@@ -21,7 +15,7 @@ const CONFIG = {
     pitch:
       "Élève-ingénieur à l'ESIGELEC et développeur en alternance, je conçois des applications web, mobiles et logicielles, du prototype à la mise en production.",
     initials: "HG",
-    // Un court extrait de code affiché dans le hero, à but purement illustratif.
+    // Un court extrait de code affiché dans le hero
     codeSnippet: `function buildProject(idea: Idea) {
   const plan = design(idea);
   const app = build(plan, {
@@ -100,7 +94,7 @@ const CONFIG = {
     },
   ],
 
-  // Ajoute, retire ou modifie autant de projets que tu veux.
+  // Liste des projets
   projects: [
     {
       title: "Applications web & mobiles — Altitude Infra",
