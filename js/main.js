@@ -1,8 +1,6 @@
 // ============================================================
 //  MAIN.JS
 //  Génère le contenu à partir de CONFIG et gère les interactions.
-//  Tu n'as normalement pas besoin de modifier ce fichier :
-//  personnalise plutôt js/config.js.
 // ============================================================
 
 (function () {
